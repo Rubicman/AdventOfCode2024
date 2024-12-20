@@ -12,3 +12,5 @@ inline fun solution(day: Int, body: (List<String>) -> Unit) {
 fun gcd(a: Long, b: Long): Long = if (b == 0L) a else gcd(b, a % b)
 
 fun lcm(a: Long, b: Long) = a * b / gcd(a, b)
+
+fun nextCells(i: Int, j: Int) = listOf(i - 1 to j, i + 1 to j, i to j - 1, i to j + 1)
